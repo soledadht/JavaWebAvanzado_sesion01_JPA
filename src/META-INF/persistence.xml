@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+	<persistence-unit name="JavaWebAvanzado_sesion01_JPA">
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.Categoria</class>
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.DetallePedido</class>
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.DetallePedidoPK</class>
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.Pedido</class>
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.Producto</class>
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.Rol</class>
+		<class>com.tecsup.javawebavanzado.sesion01.jpa.Usuario</class>
+		
+		<properties>
+
+			<property name="javax.persistence.jdbc.url" value="jdbc:mysql://192.168.13.250:3306/pcc_java_03_dev"/>
+			<property name="javax.persistence.jdbc.user" value="4C15"/>
+			<property name="javax.persistence.jdbc.password" value="4C15"/>
+			<property name="javax.persistence.jdbc.driver" value="com.mysql.jdbc.Driver"/>
+			<property name="javax.persistence.schema-generation.database.action" value="none"/>
+		</properties>
+		
+	</persistence-unit>
+</persistence>
